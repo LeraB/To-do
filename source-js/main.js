@@ -1,5 +1,5 @@
 var input = document.getElementById("input-form"),
-    list = document.getElementById("list_todo");
+     list = document.getElementById("list_todo");
 
 document.querySelector("form").addEventListener("submit", function (event) {
     event.preventDefault();
