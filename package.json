@@ -3,8 +3,16 @@
   "version": "1.0.0",
   "description": "start template with gulp and sass",
   "main": "index.js",
+  "scripts": {
+    "server": "nodemon --inspect express/app.js",
+    "test": "standard",
+    "test:fix": "standard --fix"
+  },
   "dependencies": {
-    "express": "^4.16.2",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.7.6",
+    "socket.io": "^1.7.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-babel": "^6.1.2",
@@ -14,12 +22,11 @@
     "gulp-sass": "^3.0.0",
     "gulp-sourcemaps": "^1.9.1",
     "gulp-uglify": "^2.0.0",
-    "normalize-scss": "^6.0.0",
-    "socket.io": "^2.0.4"
+    "normalize-scss": "^6.0.0"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "standard": "^10.0.2"
   },
   "keywords": [
     "sass",
