@@ -1,9 +1,9 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const listSchema = new mongoose.Schema({
     task: String,
-    complete: Boolean,
-    uncomplete: Boolean
+    date: String,
+    url: String
 });
 
 module.exports = mongoose.model('list', listSchema);
